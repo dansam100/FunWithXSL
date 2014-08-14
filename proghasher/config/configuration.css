@@ -1,0 +1,15 @@
+.mainheading {color:blue;text-decoration:underline;border-style:groove;}
+.mainspan{border-style:groove;border-width:thick;border-color:red;}
+.heading {color:white;background-color:#0000CD;}
+.miniheader{color:white;}
+.microheader{background-color:#6495ED;}
+.subheader{background-color:#6495ED;}
+.subheading{background-color:#1E90FF;color:#FFF8DC;}
+.maxPV{background-color:gray;color:white;}
+.baditem{color:red;cursor:hand;}
+.gooditem{color:green;cursor:hand;}
+.itemtable{border-width:thick medium;border-style:ridge;border-color:green;cell-padding:10px;}
+.baditemtable{border-style:ridge;border-width:thick medium;border-color:red;cell-padding:10px;}
+.maxpvtable{border-style:ridge;border-width:thick;border-color:#CD853F;padding:10px;}
+.maintable{border-style:ridge;border-width:thick;border-color:#FFF5EE;padding:10px;}
+.itemmouseover{color:gray;font-weight:bold;cursor:hand;}

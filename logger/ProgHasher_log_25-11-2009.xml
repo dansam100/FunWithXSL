@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="log.xsl"?>
+<Logger machine="LEGACY" user="user">
+<header>[Header]</header>
+<Log thread="main" date="11/25/2009" time="01:17:35" level="Info">
+<message>Windows directory not found!
+</message>
+<locationinfo method=".ctor" class="ProgHasher.Configuration.HasherConfig" line="107" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Configuration\HasherConfig.cs"/>
+</Log>
+<Log thread="main" date="11/25/2009" time="01:17:35" level="Error">
+<message>Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProgHasher.Brain.SearchList.LoadConfigs() in C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs:line 67</message>
+<locationinfo method="LoadConfigs" class="ProgHasher.Brain.SearchList" line="67" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs"/>
+</Log>
+<Log thread="main" date="11/25/2009" time="01:17:35" level="Info">
+<message>Warning: Requiring a hash size greater than allowed
+</message>
+<locationinfo method="ValidateRequest" class="ProgHasher.HasherBase" line="251" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\HasherBase.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS\Microsoft.NET\Framework\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 1.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Initializing request to find exe in 'c:\ruby\bin'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 2.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS\system32'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 3.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 4.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS\system32\WBEM'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 5.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Intel\WiFi\bin\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 6.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Notepad++\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 7.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Number of directories polled = 76.
+Number of directories completed = 8.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Microsoft SQL Server\90\Tools\binn\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Number of directories polled = 135.
+Number of directories completed = 9.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Initializing request to find exe in 'C:\cygnus\cygwin-b20\H-i586-cygwin32\bin\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Number of directories polled = 142.
+Number of directories completed = 10.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="main" date="11/25/2009" time="01:17:35" level="Info">
+<message>Windows directory not found!
+</message>
+<locationinfo method=".ctor" class="ProgHasher.Configuration.HasherConfig" line="107" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Configuration\HasherConfig.cs"/>
+</Log>
+<Log thread="main" date="11/25/2009" time="01:17:35" level="Error">
+<message>Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProgHasher.Brain.SearchList.LoadConfigs() in C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs:line 67</message>
+<locationinfo method="LoadConfigs" class="ProgHasher.Brain.SearchList" line="67" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs"/>
+</Log>
+<Log thread="main" date="11/25/2009" time="01:17:35" level="Info">
+<message>Warning: Requiring a hash size greater than allowed
+</message>
+<locationinfo method="ValidateRequest" class="ProgHasher.HasherBase" line="251" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\HasherBase.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS\Microsoft.NET\Framework\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 1.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Initializing request to find exe in 'c:\ruby\bin'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 2.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS\system32'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 3.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 4.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS\system32\WBEM'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 5.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Intel\WiFi\bin\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 6.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Notepad++\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 7.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Number of directories polled = 76.
+Number of directories completed = 8.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Microsoft SQL Server\90\Tools\binn\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Number of directories polled = 135.
+Number of directories completed = 9.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Initializing request to find exe in 'C:\cygnus\cygwin-b20\H-i586-cygwin32\bin\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Number of directories polled = 142.
+Number of directories completed = 10.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="main" date="11/25/2009" time="01:17:35" level="Info">
+<message>Windows directory not found!
+</message>
+<locationinfo method=".ctor" class="ProgHasher.Configuration.HasherConfig" line="107" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Configuration\HasherConfig.cs"/>
+</Log>
+<Log thread="main" date="11/25/2009" time="01:17:35" level="Error">
+<message>Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProgHasher.Brain.SearchList.LoadConfigs() in C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs:line 67</message>
+<locationinfo method="LoadConfigs" class="ProgHasher.Brain.SearchList" line="67" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs"/>
+</Log>
+<Log thread="main" date="11/25/2009" time="01:17:35" level="Info">
+<message>Warning: Requiring a hash size greater than allowed
+</message>
+<locationinfo method="ValidateRequest" class="ProgHasher.HasherBase" line="251" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\HasherBase.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS\Microsoft.NET\Framework\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 1.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Initializing request to find exe in 'c:\ruby\bin'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 2.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS\system32'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 3.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 4.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS\system32\WBEM'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:35" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 5.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Intel\WiFi\bin\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 6.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Notepad++\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Number of directories polled = 18.
+Number of directories completed = 7.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Number of directories polled = 76.
+Number of directories completed = 8.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Microsoft SQL Server\90\Tools\binn\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Number of directories polled = 135.
+Number of directories completed = 9.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Initializing request to find exe in 'C:\cygnus\cygwin-b20\H-i586-cygwin32\bin\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:36" level="Info">
+<message>Number of directories polled = 142.
+Number of directories completed = 10.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in ''
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 148.
+Number of directories completed = 11.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\ZipGenius 6\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 148.
+Number of directories completed = 12.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS\system32\WindowsPowerShell\v1.0'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 148.
+Number of directories completed = 13.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Common Files\DivX Shared\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 150.
+Number of directories completed = 14.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Samsung\Samsung PC Studio 3\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 150.
+Number of directories completed = 15.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\cygnus\cygwin-b20\H-i586-cygwin32\coldfire-cygwin-0.2.2'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 150.
+Number of directories completed = 16.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 150.
+Number of directories completed = 17.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 150.
+Number of directories completed = 18.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in ''
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 148.
+Number of directories completed = 11.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\ZipGenius 6\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 148.
+Number of directories completed = 12.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS\system32\WindowsPowerShell\v1.0'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 148.
+Number of directories completed = 13.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Common Files\DivX Shared\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 150.
+Number of directories completed = 14.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Samsung\Samsung PC Studio 3\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 150.
+Number of directories completed = 15.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\cygnus\cygwin-b20\H-i586-cygwin32\coldfire-cygwin-0.2.2'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 150.
+Number of directories completed = 16.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 150.
+Number of directories completed = 17.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 150.
+Number of directories completed = 18.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in ''
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 148.
+Number of directories completed = 11.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\ZipGenius 6\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 148.
+Number of directories completed = 12.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\WINDOWS\system32\WindowsPowerShell\v1.0'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 148.
+Number of directories completed = 13.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Common Files\DivX Shared\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 150.
+Number of directories completed = 14.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Samsung\Samsung PC Studio 3\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 150.
+Number of directories completed = 15.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\cygnus\cygwin-b20\H-i586-cygwin32\coldfire-cygwin-0.2.2'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 150.
+Number of directories completed = 16.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 150.
+Number of directories completed = 17.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Initializing request to find exe in 'C:\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:37" level="Info">
+<message>Number of directories polled = 150.
+Number of directories completed = 18.
+Events = 18
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="14" date="11/25/2009" time="01:17:43" level="Error">
+<message>System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProgHasher.Brain.SearchList.StoreList(ResultList list, String name, String type) in C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs:line 128
+</message>
+<locationinfo method="StoreList" class="ProgHasher.Brain.SearchList" line="136" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs"/>
+</Log>
+<Log thread="14" date="11/25/2009" time="01:17:43" level="Error">
+<message>System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProgHasher.Brain.SearchList.StoreList(ResultList list, String name, String type) in C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs:line 128
+</message>
+<locationinfo method="StoreList" class="ProgHasher.Brain.SearchList" line="136" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs"/>
+</Log>
+<Log thread="14" date="11/25/2009" time="01:17:43" level="Error">
+<message>System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProgHasher.Brain.SearchList.StoreList(ResultList list, String name, String type) in C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs:line 128
+</message>
+<locationinfo method="StoreList" class="ProgHasher.Brain.SearchList" line="136" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Documents and Settings\user\My Documents\My Music'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 303.
+Number of directories completed = 19.
+Events = 19
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Documents and Settings\user\My Documents'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 303.
+Number of directories completed = 20.
+Events = 20
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Documents and Settings\user\Start Menu\Programs\Startup'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 303.
+Number of directories completed = 21.
+Events = 21
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Documents and Settings\user\My Documents\My Pictures'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 304.
+Number of directories completed = 22.
+Events = 22
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Documents and Settings\user\Desktop'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 304.
+Number of directories completed = 23.
+Events = 23
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Intel\WiFi\bin\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 304.
+Number of directories completed = 24.
+Events = 24
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Notepad++\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 325.
+Number of directories completed = 25.
+Events = 25
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Microsoft SQL Server\90\Tools\binn\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 325.
+Number of directories completed = 26.
+Events = 26
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\cygnus\cygwin-b20\H-i586-cygwin32\bin\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 325.
+Number of directories completed = 27.
+Events = 27
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\ZipGenius 6\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 328.
+Number of directories completed = 28.
+Events = 28
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Common Files\DivX Shared\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 328.
+Number of directories completed = 29.
+Events = 29
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Samsung\Samsung PC Studio 3\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 328.
+Number of directories completed = 30.
+Events = 30
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>I am done polling all folders.
+</message>
+<locationinfo method="OnPollCompleted" class="ProgHasher.HasherBase" line="403" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\HasherBase.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>wait completed
+</message>
+<locationinfo method="WaitAll" class="ProgHasher.Poller.TaskPoller" line="205" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Hashing completed in 11000 ms
+</message>
+<locationinfo method="OnHashCompleted" class="ProgHasher.HasherBase" line="418" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\HasherBase.cs"/>
+</Log>
+<Log thread="12" date="11/25/2009" time="01:17:47" level="Info">
+<message>Result = 
+</message>
+<locationinfo method="BWGRunWorkerCompleted" class="ProgHasher.HasherBase" line="380" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\HasherBase.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Documents and Settings\user\My Documents\My Music'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 303.
+Number of directories completed = 19.
+Events = 19
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Documents and Settings\user\My Documents'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 303.
+Number of directories completed = 20.
+Events = 20
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Documents and Settings\user\Start Menu\Programs\Startup'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 303.
+Number of directories completed = 21.
+Events = 21
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Documents and Settings\user\My Documents\My Pictures'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 304.
+Number of directories completed = 22.
+Events = 22
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Documents and Settings\user\Desktop'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 304.
+Number of directories completed = 23.
+Events = 23
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Intel\WiFi\bin\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 304.
+Number of directories completed = 24.
+Events = 24
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Notepad++\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 325.
+Number of directories completed = 25.
+Events = 25
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Microsoft SQL Server\90\Tools\binn\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 325.
+Number of directories completed = 26.
+Events = 26
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\cygnus\cygwin-b20\H-i586-cygwin32\bin\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 325.
+Number of directories completed = 27.
+Events = 27
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\ZipGenius 6\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 328.
+Number of directories completed = 28.
+Events = 28
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Common Files\DivX Shared\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 328.
+Number of directories completed = 29.
+Events = 29
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Samsung\Samsung PC Studio 3\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 328.
+Number of directories completed = 30.
+Events = 30
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>I am done polling all folders.
+</message>
+<locationinfo method="OnPollCompleted" class="ProgHasher.HasherBase" line="403" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\HasherBase.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>wait completed
+</message>
+<locationinfo method="WaitAll" class="ProgHasher.Poller.TaskPoller" line="205" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Hashing completed in 11000 ms
+</message>
+<locationinfo method="OnHashCompleted" class="ProgHasher.HasherBase" line="418" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\HasherBase.cs"/>
+</Log>
+<Log thread="12" date="11/25/2009" time="01:17:47" level="Info">
+<message>Result = 
+</message>
+<locationinfo method="BWGRunWorkerCompleted" class="ProgHasher.HasherBase" line="380" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\HasherBase.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Documents and Settings\user\My Documents\My Music'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 303.
+Number of directories completed = 19.
+Events = 19
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Documents and Settings\user\My Documents'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 303.
+Number of directories completed = 20.
+Events = 20
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Documents and Settings\user\Start Menu\Programs\Startup'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 303.
+Number of directories completed = 21.
+Events = 21
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Documents and Settings\user\My Documents\My Pictures'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 304.
+Number of directories completed = 22.
+Events = 22
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Documents and Settings\user\Desktop'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 304.
+Number of directories completed = 23.
+Events = 23
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Intel\WiFi\bin\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 304.
+Number of directories completed = 24.
+Events = 24
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Notepad++\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 325.
+Number of directories completed = 25.
+Events = 25
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Microsoft SQL Server\90\Tools\binn\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 325.
+Number of directories completed = 26.
+Events = 26
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\cygnus\cygwin-b20\H-i586-cygwin32\bin\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 325.
+Number of directories completed = 27.
+Events = 27
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\ZipGenius 6\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 328.
+Number of directories completed = 28.
+Events = 28
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Common Files\DivX Shared\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 328.
+Number of directories completed = 29.
+Events = 29
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Initializing request to find exe in 'C:\Program Files\Samsung\Samsung PC Studio 3\'
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="156" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Number of directories polled = 328.
+Number of directories completed = 30.
+Events = 30
+</message>
+<locationinfo method="InitRequest" class="ProgHasher.Poller.TaskPoller" line="169" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>I am done polling all folders.
+</message>
+<locationinfo method="OnPollCompleted" class="ProgHasher.HasherBase" line="403" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\HasherBase.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>wait completed
+</message>
+<locationinfo method="WaitAll" class="ProgHasher.Poller.TaskPoller" line="205" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Poller\TaskPoller.cs"/>
+</Log>
+<Log thread="runner" date="11/25/2009" time="01:17:47" level="Info">
+<message>Hashing completed in 11000 ms
+</message>
+<locationinfo method="OnHashCompleted" class="ProgHasher.HasherBase" line="418" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\HasherBase.cs"/>
+</Log>
+<Log thread="12" date="11/25/2009" time="01:17:47" level="Info">
+<message>Result = 
+</message>
+<locationinfo method="BWGRunWorkerCompleted" class="ProgHasher.HasherBase" line="380" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\HasherBase.cs"/>
+</Log>
+<Log thread="14" date="11/25/2009" time="01:17:57" level="Error">
+<message>System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProgHasher.Brain.SearchList.StoreList(ResultList list, String name, String type) in C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs:line 128
+</message>
+<locationinfo method="StoreList" class="ProgHasher.Brain.SearchList" line="136" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs"/>
+</Log>
+<Log thread="14" date="11/25/2009" time="01:17:57" level="Error">
+<message>System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProgHasher.Brain.SearchList.StoreList(ResultList list, String name, String type) in C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs:line 128
+</message>
+<locationinfo method="StoreList" class="ProgHasher.Brain.SearchList" line="136" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs"/>
+</Log>
+<Log thread="14" date="11/25/2009" time="01:17:57" level="Error">
+<message>System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProgHasher.Brain.SearchList.StoreList(ResultList list, String name, String type) in C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs:line 128
+</message>
+<locationinfo method="StoreList" class="ProgHasher.Brain.SearchList" line="136" file="C:\Documents and Settings\user\My Documents\Personal Programs\ProgHasher\Brain\SearchList.cs"/>
+</Log>
+<footer>[Footer]</footer>
+</Logger>

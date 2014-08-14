@@ -1,0 +1,492 @@
+<html>
+	<h1 align="center">Xsl Tester</h1>
+	<head>	
+	  <title>XSL Tester</title>
+	  <HTA:APPLICATION ID="xslTester" 
+		APPLICATIONNAME="XSL Tester" 
+		BORDER="yes"
+		CAPTION="yes"
+		ICON="/graphics/creature.ico"
+		SHOWINTASKBAR="yes"
+		SINGLEINSTANCE="yes"
+		SYSMENU="yes"
+		WINDOWSTATE="restore">
+	</head>
+	<style type="text/css">
+		.normal
+		{
+			background-color:white;
+		}
+		
+		div.nav a
+		{
+			color: blue;
+			font-weight:bold;
+			text-decoration:underline;
+			cursor:hand;
+		}
+		
+		.error
+		{
+			background-color:red;
+		}
+		
+		.hidden
+		{
+			display:none;
+		}
+		
+		.shown
+		{
+			display:visible;
+		}
+	</style>
+	<script type="text/javascript">
+		var params, values, timer, current;
+		var fso = new ActiveXObject("Scripting.FileSystemObject");
+		params = [];
+		values = [];
+		current = 0;
+		size = 0;
+		
+		ERROR = false;
+		FILEERROR = false;
+		
+		var xmlFilePath = "";
+		var xslFilePath = "";
+		var xmlfiles = [];
+		var xslfiles = [];
+
+		function PerformXslTransform()
+		{
+			try 
+			{
+				var xslt    = new ActiveXObject("MSXML2.XSLTemplate.4.0");
+				var xmlObj  = new ActiveXObject("MSXML2.DOMDocument.4.0");
+				
+				xmlObj.async = false;
+				xmlObj.resolveExternals = false;
+				var xmlDoc = xmlObj.load(xmlFilePath);
+				if (!xmlDoc) {
+					throw new Error(1, "Unable to load XML file \"" + xmlFilePath + "\"");
+				}
+				if (xmlObj.parseError.errorCode != 0) {
+					throw new Error(2, "\"" + xmlObj.parseError.reason + "\", line=" + xmlObj.parseError.line);
+				}
+				else {
+					// Load style sheet.
+					var xslObj = new ActiveXObject("MSXML2.FreeThreadedDOMDocument.4.0");
+					xslObj.async = false
+					xslObj.resolveExternals = false;
+					xslObj.load(xslFilePath);
+					xslt.stylesheet = xslObj;
+					if (!xslObj) {
+						throw new Error(3, "Unable to load XSL file \"" + xslFilePath + "\"");
+					}
+					if (xslObj.parseError.errorCode != 0) {
+						throw new Error(4, "\"" + xslObj.parseError.reason + "\", line=" + xslObj.parseError.line);
+					}
+					else {
+						var xslProc = xslt.createProcessor();
+						// Add parameters to XSL sheet
+						
+						for (var i in params) {
+							//alert("adding" + params[i] + " => " + values[i]);
+							xslProc.addParameter(params[i], values[i]);
+						}
+						
+						xslProc.input = xmlObj;
+						xslProc.transform();
+						return(xslProc.output);
+					}
+				}
+			}
+			catch (err) {
+				propError(err, arguments);
+			}
+		}
+		
+		function collectParameters()
+		{
+			var parent = document.getElementById("paramareas");
+			
+			xmlFilePath = document.selector.xmllist[document.selector.xmllist.selectedIndex].value;
+			xslFilePath = document.selector.xsllist[document.selector.xsllist.selectedIndex].value;
+			
+			if(xmlFilePath == ""){
+				document.selector.xmllist.className = "error";
+				document.getElementById("status").innerHTML = "<font color='red'><b>Please specify an xml file.</b></font>";
+				FILEERROR = true;
+			}
+				
+			if(xslFilePath == ""){
+				document.selector.xsllist.className = "error";
+				document.getElementById("status").innerHTML = document.getElementById("status").innerHTML + 
+																	"<br><font color='red'><b>Please specify an xsl file.</b></font>";
+				FILEERROR = true;
+			}
+			//collect the parameters if there are any.
+			if(parent.hasChildNodes())
+			{
+				var j = 0;
+				for(var i = 0; i <= current; i++)
+				{
+					var pname = "parambox"+i.toString();
+					var vname = "valuebox"+i.toString();
+					var param = document.getElementById(pname);
+					var value = document.getElementById(vname);
+					if(param != null && param.value != "")
+					{
+						if(value != null && value.value != "")
+						{
+							params[j] = param.value;
+							values[j] = value.value;
+							j++;
+						}
+						else if(value != null)
+						{
+							value.className = "error";
+							ERROR = true;
+						}
+						else
+						{
+							ERROR = true;
+						}
+					}
+					else if(param != null && value != null && value.value != "")
+					{
+						param.className = "error";
+						ERROR = true;
+					}
+				}
+				if(ERROR)
+				{
+					document.getElementById("status").innerHTML = document.getElementById("status").innerHTML + 
+																"<br/><font color='red'><b>Error in parameters</b></font>";
+				}
+			}
+		}
+		
+		//display results.
+		function displayResult()
+		{
+			clear();
+			var valuename = "valuebox";
+			var paramname = "parambox";
+			
+			document.getElementById("status").innerHTML = "Please wait while I run scripts...";
+			
+			collectParameters();
+			if(ERROR)
+				timer = setTimeout("clear()", 10000);
+			if(!FILEERROR)
+			{
+				clearTimeout(timer);
+				document.getElementById("response").innerHTML = PerformXslTransform();
+				document.listForm.className = 'shown';
+				document.selector.className = 'hidden';
+			}
+		}
+		
+		//add a parameter row.
+		function addParamRow()
+		{
+			var parent = document.getElementById("paramareas");
+			var paramboxName, valueboxName, trName, btnID;
+			if(parent != null)
+			{
+				current++;
+				size++;
+				//create a new param area span for this.
+				var spanNode = document.createElement('span');
+				spanNode.setAttribute('name', 'paramarea' + current.toString());
+				spanNode.setAttribute('id', 'paramarea' + current.toString());
+				
+				//get the attribute values.
+				trName = "paramarea" + current.toString();
+				paramboxName = "parambox" + current.toString();
+				valueboxName = "valuebox" + current.toString();
+				btnID = current.toString();
+				
+				//create the node html components
+				var tNodeStart = "<table  align=\"center\" border=\"1\" width=\"100%\" cellspacing=\"5px\"><tbody id=\"params\">";
+				var trNodeStart = "<tr id=\"" + trName + "\">";
+				var paramBoxNode = "<td><input class=\"normal\" onFocus=\"this.className='normal'\" type=\"text\" id=\"" + paramboxName + "\"name=\"" + paramboxName + "\" value=\"\"/></td>";
+				var valueBoxNode = "<td><input class=\"normal\" onFocus=\"this.className='normal'\" type=\"text\" id=\"" + valueboxName + "\" name=\"" + valueboxName + "\" value=\"\"/></td>";
+				var removeBtnNode = "<td><button class=\"special\" id=\"" + btnID + "\" onClick=\"removeRow(this.id)\">X</button></td>";
+				var trNodeEnd = "</tr>";
+				var tNodeEnd = "</tbody></table>";
+				
+				//create the html for the new node.
+				newNode = tNodeStart;
+				newNode += trNodeStart;
+				newNode += paramBoxNode;
+				newNode += valueBoxNode;
+				newNode += removeBtnNode;
+				newNode += trNodeEnd;
+				newNode += tNodeEnd;
+				
+				//add the new node to the new span and put it on the document.
+				spanNode.innerHTML = newNode;
+				parent.appendChild(spanNode);
+				if(document.getElementById("requesttable").className == 'hidden');
+				{
+					document.getElementById("requesttable").className = 'shown';
+				}
+				if(parent.childNodes.length > 10 )
+					alert('Umm...How many fking parameters are you putting in this thing?!?');
+			}
+		}
+		
+		//remove a row given by some id.
+		function removeRow(id)
+		{
+			//find the node and remove it.
+			var paramareaString = "paramarea";
+			if(id != null || id != 0 || id != "")
+			{
+				var name = paramareaString + id.toString();
+				var area = document.getElementById(name);
+				var parent = document.getElementById("paramareas");
+				if(area != null && parent.hasChildNodes())
+				{
+					parent.removeChild(area);
+					size--;
+				}
+				if(!parent.hasChildNodes())
+				{
+					document.getElementById("requesttable").className = 'hidden';
+				}
+			}
+		}
+		
+		//clear pointless stuff.
+		function clear()
+		{
+			document.getElementById("status").innerHTML = "";
+			//document.getElementById("response").innerHTML = "";
+			document.getElementById("tip").innerHTML = "&nbsp;";
+			clearTimeout(timer);
+			params = [];
+			values = [];
+			FILEERROR = false;
+			ERROR = false;
+		}
+		
+		//navigate to the main screen
+		function back()
+		{
+			document.listForm.className = 'hidden';
+			document.selector.className = 'shown';
+			document.getElementById("status").innerHTML = "";
+		}
+		
+		function change(object){dblchange(object, false);}
+		
+		function dblchange(object, select)
+		{
+		    if(object.id == 'xmllist')
+		    {
+		        document.selector.xmllocation.value = '';
+		        if(select){
+		            document.selector.xmllocation.value = object.options[object.selectedIndex].value;
+		        }
+		        object.options[object.selectedIndex].selected = true;
+		        object.className = 'hidden';
+		        document.selector.xmllocation.className = 'shown';
+		        document.selector.xmllocation.focus();
+		    }
+		    else if(object.id == 'xsllist')
+		    {
+		        document.selector.xmllocation.value = '';
+		        if(select){
+		            document.selector.xsllocation.value = object.options[object.selectedIndex].value;
+		        }
+		        object.options[object.selectedIndex].selected = true;
+		        object.className = 'hidden';
+		        document.selector.xsllocation.className = 'shown';
+		        document.selector.xsllocation.focus();
+		    }
+		}
+		
+		
+		function unchange(object)
+		{
+		    var xmlcontent = document.selector.xmllocation;
+		    var xslcontent = document.selector.xsllocation;
+		    var list;
+		    var content;
+		    if(object.name == "xmllocation")
+		    {
+		        content = xmlcontent;
+		        list = document.selector.xmllist;
+		    }
+		    else if(object.name == "xsllocation")
+		    {
+		        content = xslcontent;
+		        list = document.selector.xsllist;
+		    }
+		    found = false;
+		    var validtext = /^\w+|[\.+\\]*\.*/;
+		    for(var i = 0; i < list.options.length; i++)
+		    {
+		        if(list.options != null && list.options[i] != null)
+		        { 
+		            if(list.options[i].value == content.value)
+		            {
+		                found = true;
+						list.options.SelectedIndex = i;
+		                break;
+		            }
+		        }
+		    }
+		    if(!found)
+		    {
+		        if(fso.FileExists(content.value) && validtext.exec(content.value))
+		        { 
+		            list.options[list.options.length] = new Option(content.value, content.value);
+		            list.options[list.options.length-1].selected = true;
+		        }
+		        else {
+		            document.getElementById("status").innerHTML = "<font style='color:red'><b>Invalid file name entered.</b></font>";
+		            list.className = 'error';
+		            timer = setTimeout("clear()", 5000);
+		        }
+		    }
+		    content.value = '';
+		    content.className = 'hidden';
+		    
+		    list.className = 'shown';
+		}
+		
+		function populateFiles()
+		{
+		    var path = document.location.pathname;
+		    var index2 = path.lastIndexOf('\\');
+		    var index1 = 0;
+		    if(index2 < 0)
+		    {
+		        index2 = path.lastIndexOf('/');
+		        index1 = path.indexOf('/', 1);
+		    }
+		    var dir = unescape(path.substring(index1, index2));
+		    
+		    var folder = fso.GetFolder(dir);
+		    var xsl = /^\w*[A-Za-z0-9_\-]*\d*\.xsl$/;
+		    var xml = /^\w*[A-Za-z0-9_\-]*\d*\.xml$/;
+		    var enumFiles = new Enumerator(folder.files);
+		    for(; !enumFiles.atEnd(); enumFiles.moveNext())
+		    {
+		        var file = enumFiles.item();
+		        
+		        if(xsl.exec(file.name))
+		        {
+		            xslfiles.push(file.name);
+		        }
+		        else if(xml.exec(file.name))
+		        {
+		            xmlfiles.push(file.name);
+		        }
+		    }
+		    var xmlList = document.selector.xmllist;
+		    var xslList = document.selector.xsllist;
+		    for(var i in xmlfiles)
+		    {
+		        xmlList.options[xmlList.options.length] = new Option(xmlfiles[i], xmlfiles[i]);
+		    }
+		    for(var i in xslfiles)
+		    {
+		        xslList.options[xslList.options.length] = new Option(xslfiles[i], xslfiles[i]);
+		    }
+		}
+		
+		function displaytip()
+		{
+		    document.getElementById("tip").innerHTML = '<b>Select</b> item from list or <b>type</b> in the box.';
+		    timer = setTimeout("clear()", 5000);
+		}
+	</script>
+	<body onload="populateFiles()">
+		<hr/>
+		<br/>
+		<form name="selector" class="shown">
+			<span id="request" >
+				<table align="center" name="filetable" cellspacing="5px" border="0">
+				    <tr>
+					     <td colspan="2" style="height:20px;text-align:center">
+					        <span id="tip" style="color:Green;">&nbsp;</span>
+					    </td>
+					</tr>
+					<tr>
+					    <td style="font-weight:bold;">XML File Path: </td>
+					    <td>
+					        <select style="cursor:text;width:auto|20px;" name="xmllist" id="xmllist" class="shown" onfocus="this.className='shown'" onclick="displaytip()" ondblclick="dblchange(this, true)" onkeypress="change(this)" onchange="xmllocation.value=this.options[this.selectedIndex].value"/>
+					        <input type="text" value="" class='hidden' name="xmllocation" onblur="unchange(this)"/>
+					    </td>
+					</tr>
+					<tr>
+					    <td style="font-weight:bold;">XSL File Path: </td>
+					    <td>
+					        <select style="cursor:text;width:auto|20px;" name="xsllist" id="xsllist" class="shown" onfocus="this.className='shown'" onclick="displaytip()" ondblclick="dblchange(this, true)" onkeypress="change(this)" onchange="xsllocation.value=this.options[this.selectedIndex].value"/>
+					        <input type="text" value="" class="hidden" name="xsllocation" onblur="unchange(this)"/>
+					    </td>
+					</tr>
+				</table>
+				<br/>
+				<hr/>
+				<table align="center" name="buttons">
+					<tr name="buttonarea">
+						<td><button name="addRow" onClick="addParamRow()" accesskey="A">Add Parameter</button></td>
+					</tr>
+				</table>
+				<hr/>
+				<span id="requesttable" class="hidden">
+					<table align="center" border="0">
+						<tr name="miniheader">
+							<th>Param name</th>
+							<th>Param value</th>
+						</tr>
+						<tr>
+							<td colspan="2" id="paramRows">
+								<span id="paramareas"></span>
+							<td>
+						</tr>
+						<tr name="spacer">
+							<td colspan="2">&nbsp;</td>
+						</tr>
+					</table>
+					<hr/>
+				</span>
+				<table align="center" cellspacing="30px">
+					<tr width="100%" align="right">
+						<td align="right" width="50%">
+							<button id="submit" name="displayBtn" style="width:80px" onClick="displayResult()" accesskey="D">Display</button>
+						</td>
+						<td align="left" width="50%">
+							<button id="closebtn" name="closebtn" style="width:80px" onClick="javascript:window.close()" accesskey="C">Close</button>
+						</td>
+					</tr>
+					<tr >
+						<td colspan="2">
+							<p align="center"><span id="status"></span></p>
+						</td>
+					</tr>
+				</table>
+			</span>
+		</form>
+		<form name="listForm" class="hidden">
+			<div align="center">
+				<span id="response"></span>
+			</div>
+			<div class="nav" align="center">
+				<span id="navigation">
+					<table width="100%">
+						<tr>
+							<td align="center" width="34%"><a id="mainLink" onClick="back()">Main Screen</a></td>
+						</tr>
+					</table>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

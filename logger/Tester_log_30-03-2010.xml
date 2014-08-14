@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="log.xsl"?>
+<Logger machine="LEGACY" user="user">
+<header>[Header]</header>
+<Log thread="Washer" date="3/30/2010" time="12:00:09" level="Info">
+<message>Application Server: Issuing command 'Washer,Ping'
+</message>
+<locationinfo method="IssueCommand" class="CentralController.ApplicationServer" line="198" file="E:\AutomationDepot\ApplicationServer\ApplicationServer\ApplicationServer.cs"/>
+</Log>
+<Log thread="Washer" date="3/30/2010" time="12:00:09" level="Info">
+<message>Client 'Washer' connected to the server.
+</message>
+<locationinfo method="UpdateUI" class="CentralController.ApplicationServer" line="176" file="E:\AutomationDepot\ApplicationServer\ApplicationServer\ApplicationServer.cs"/>
+</Log>
+<Log thread="10" date="3/30/2010" time="12:00:20" level="Info">
+<message>Application Server: Issuing command 'Washer,PowerOn'
+</message>
+<locationinfo method="IssueCommand" class="CentralController.ApplicationServer" line="198" file="E:\AutomationDepot\ApplicationServer\ApplicationServer\ApplicationServer.cs"/>
+</Log>
+<Log thread="10" date="3/30/2010" time="12:00:34" level="Info">
+<message>Application Server: Issuing command 'Washer,Start,80:20:Colors'
+</message>
+<locationinfo method="IssueCommand" class="CentralController.ApplicationServer" line="198" file="E:\AutomationDepot\ApplicationServer\ApplicationServer\ApplicationServer.cs"/>
+</Log>
+<Log thread="7" date="3/30/2010" time="12:00:37" level="Info">
+<message>Application Server: Issuing command 'Washer,Status'
+</message>
+<locationinfo method="IssueCommand" class="CentralController.ApplicationServer" line="198" file="E:\AutomationDepot\ApplicationServer\ApplicationServer\ApplicationServer.cs"/>
+</Log>
+<Log thread="10" date="3/30/2010" time="12:00:53" level="Info">
+<message>Application Server: Issuing command 'Washer,Status'
+</message>
+<locationinfo method="IssueCommand" class="CentralController.ApplicationServer" line="198" file="E:\AutomationDepot\ApplicationServer\ApplicationServer\ApplicationServer.cs"/>
+</Log>
+<Log thread="7" date="3/30/2010" time="12:01:07" level="Info">
+<message>Application Server: Issuing command 'Washer,Status'
+</message>
+<locationinfo method="IssueCommand" class="CentralController.ApplicationServer" line="198" file="E:\AutomationDepot\ApplicationServer\ApplicationServer\ApplicationServer.cs"/>
+</Log>
+<Log thread="10" date="3/30/2010" time="12:01:15" level="Info">
+<message>Application Server: Issuing command 'Washer,Stop'
+</message>
+<locationinfo method="IssueCommand" class="CentralController.ApplicationServer" line="198" file="E:\AutomationDepot\ApplicationServer\ApplicationServer\ApplicationServer.cs"/>
+</Log>
+<Log thread="10" date="3/30/2010" time="12:01:21" level="Info">
+<message>Application Server: Issuing command 'Washer,Status'
+</message>
+<locationinfo method="IssueCommand" class="CentralController.ApplicationServer" line="198" file="E:\AutomationDepot\ApplicationServer\ApplicationServer\ApplicationServer.cs"/>
+</Log>
+<Log thread="10" date="3/30/2010" time="12:01:34" level="Info">
+<message>Application Server: Issuing command 'Washer,Shit'
+</message>
+<locationinfo method="IssueCommand" class="CentralController.ApplicationServer" line="198" file="E:\AutomationDepot\ApplicationServer\ApplicationServer\ApplicationServer.cs"/>
+</Log>
+<Log thread="7" date="3/30/2010" time="12:01:37" level="Info">
+<message>Application Server: Issuing command 'Washer,Status'
+</message>
+<locationinfo method="IssueCommand" class="CentralController.ApplicationServer" line="198" file="E:\AutomationDepot\ApplicationServer\ApplicationServer\ApplicationServer.cs"/>
+</Log>
+<Log thread="10" date="3/30/2010" time="12:01:43" level="Info">
+<message>Application Server: Issuing command 'Washer,PowerOff'
+</message>
+<locationinfo method="IssueCommand" class="CentralController.ApplicationServer" line="198" file="E:\AutomationDepot\ApplicationServer\ApplicationServer\ApplicationServer.cs"/>
+</Log>
+<Log thread="10" date="3/30/2010" time="12:02:07" level="Info">
+<message>Application Server: Issuing command 'Washer,Start,80:20:Colors'
+</message>
+<locationinfo method="IssueCommand" class="CentralController.ApplicationServer" line="198" file="E:\AutomationDepot\ApplicationServer\ApplicationServer\ApplicationServer.cs"/>
+</Log>
+<Log thread="7" date="3/30/2010" time="12:02:07" level="Info">
+<message>Application Server: Issuing command 'Washer,Status'
+</message>
+<locationinfo method="IssueCommand" class="CentralController.ApplicationServer" line="198" file="E:\AutomationDepot\ApplicationServer\ApplicationServer\ApplicationServer.cs"/>
+</Log>
+<Log thread="10" date="3/30/2010" time="12:02:25" level="Info">
+<message>Application Server: Issuing command 'Washer,PowerOn'
+</message>
+<locationinfo method="IssueCommand" class="CentralController.ApplicationServer" line="198" file="E:\AutomationDepot\ApplicationServer\ApplicationServer\ApplicationServer.cs"/>
+</Log>
+</Logger>

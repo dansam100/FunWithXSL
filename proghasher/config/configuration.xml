@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<Configuration>
+	<Programs>
+		<ProgHasher>
+			<MaxPerFolder>50</MaxPerFolder>
+			<SearchList>
+				<Music extensions="mp3;aac;mid">
+					<HashFirst>
+						<Location depth="20">OTHERS</Location>
+						<Location depth="10">HOMEDRIVE</Location>
+					</HashFirst>
+					<HashAfter>
+						<Location depth="2">PATH</Location>
+						<Location depth="5">PROGRAMFILES</Location>
+						<Location depth="2">WINDIR</Location>
+					</HashAfter>
+				</Music>
+				<Executable extensions="exe;bat;com">
+					<HashFirst>
+						<Location depth="2">PATH</Location>
+						<Location depth="5">PROGRAMFILES</Location>
+						<Location depth="2">WINDIR</Location>
+						<Location depth="10">HOMEDRIVE</Location>
+					</HashFirst>
+					<HashAfter>
+            <Location depth="20">OTHERS</Location>
+            <Location depth="20">PATH</Location>
+					</HashAfter>
+				</Executable>
+				<Documents extensions="doc;pdf;xml">
+					<HashFirst>
+						<Location depth="20">OTHERS</Location>
+						<Location depth="10">HOMEDRIVE</Location>
+					</HashFirst>
+					<HashAfter>
+						<Location depth="2">PATH</Location>
+						<Location depth="5">PROGRAMFILES</Location>
+						<Location depth="2">WINDIR</Location>
+					</HashAfter>
+				</Documents>
+			</SearchList>
+			<ExclusionList>
+				<Regex>[\$.*\$]{1}</Regex>
+			</ExclusionList>
+		</ProgHasher>
+	</Programs>
+</Configuration>

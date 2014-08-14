@@ -1,0 +1,295 @@
+<html>
+	<h1 align="center">ProgHasher Storage Viewer</h1>
+	<head>	
+	  <title>ProgHasher Storage Viewer</title>
+	  <HTA:APPLICATION ID="oMyApp" 
+		APPLICATIONNAME="practice" 
+		BORDER="none"
+		CAPTION="yes"
+		ICON="/graphics/creature.ico"
+		SHOWINTASKBAR="yes"
+		SINGLEINSTANCE="yes"
+		SYSMENU="yes"
+		WINDOWSTATE="restore">
+	</head>
+	<style type="text/css">
+		.normal
+		{
+			background-color:white;
+		}
+		
+		div.nav a
+		{
+			color: blue;
+			font-weight:bold;
+			text-decoration:underline;
+			cursor:hand;
+		}
+		
+		.error
+		{
+			background-color:red;
+		}
+		
+		.hidden
+		{
+			display:none;
+		}
+		
+		.shown
+		{
+			display:visible;
+		}
+	</style>
+	<script type="text/javascript">
+		var type, num, timer, start, size, limit;
+		var nexting = false;
+		start = 1;
+		function loadXMLDoc(fname)
+		{
+			var xmlDoc;
+			// code for IE
+			if (window.ActiveXObject)
+			{
+				xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+			}
+			// code for Mozilla, Firefox, Opera, etc.
+			else if (document.implementation && document.implementation.createDocument)
+			{
+				xmlDoc=document.implementation.createDocument("","",null);
+			}
+			else
+			{
+				alert('Your browser cannot handle this script');
+			}
+			xmlDoc.async=false;
+			xmlDoc.load(fname);
+			return (xmlDoc);
+		}
+
+		function PerformXslTransform()
+		{
+			try 
+			{
+				var xslt    = new ActiveXObject("MSXML2.XSLTemplate.6.0");
+				var xmlObj  = new ActiveXObject("MSXML2.DOMDocument.4.0");
+				var xmlFilePath = "execache.xml";
+				var xslFilePath = "execache.xsl";
+				xmlObj.async = false;
+				xmlObj.resolveExternals = false;
+				var xmlDoc = xmlObj.load(xmlFilePath);
+				if (!xmlDoc) {
+					throw new Error(1, "Unable to load XML file \"" + xmlFilePath + "\"");
+				}
+				if (xmlObj.parseError.errorCode != 0) {
+					throw new Error(2, "\"" + xmlObj.parseError.reason + "\", line=" + xmlObj.parseError.line);
+				}
+				else {
+					// Load style sheet.
+					var xslObj = new ActiveXObject("MSXML2.FreeThreadedDOMDocument.6.0");
+					xslObj.async = false
+					xslObj.resolveExternals = false;
+					xslObj.load(xslFilePath);
+					xslt.stylesheet = xslObj;
+					if (!xslObj) {
+						throw new Error(3, "Unable to load XSL file \"" + xslFilePath + "\"");
+					}
+					if (xslObj.parseError.errorCode != 0) {
+						throw new Error(4, "\"" + xslObj.parseError.reason + "\", line=" + xslObj.parseError.line);
+					}
+					else {
+						var xslProc = xslt.createProcessor();
+						// Add parameters to XSL sheet
+						xslProc.addParameter("maintype", type);
+						xslProc.addParameter("mainnumber", limit);
+						xslProc.addParameter("start", start);
+						xslProc.input = xmlObj;
+						xslProc.transform();
+						return(xslProc.output);
+					}
+				}
+			}
+			catch (err) {
+				alert(err.message);
+				//propError(err, arguments);
+			}
+		}
+		
+		
+		function displayResult()
+		{
+			clear();
+			if(!nexting){
+				type = document.selector.typebox.value;
+				num = document.selector.numdisp.value;
+			}
+			errorfound = false;
+			
+			document.getElementById("status").innerHTML = "Please wait while I populate tables";
+			
+			if(type == "")
+			{
+				document.selector.typebox.className = 'error';
+				document.getElementById("status").innerHTML = "<font color='red'><b>Please specify a type.</b></font>";
+				errorfound = true;
+			}
+			if(num != "")
+			{
+				regex = /^\d+$/;
+				if(!regex.exec(num))
+				{
+					document.selector.numdisp.className = 'error';
+					if(errorfound)
+						document.getElementById("status").innerHTML = document.getElementById("status").innerHTML + 
+																	"<br><font color='red'><b>Please enter a valid number.</b></font>";
+					else
+						document.getElementById("status").innerHTML = "<font color='red'><b>Please enter a valid number.</b></font>";
+					errorfound = true;
+				}
+				num = parseFloat(num);
+			}
+			else
+			{
+				num = 10;
+			}
+			if(!nexting){
+				limit = num + 1;
+			}
+			if(errorfound){
+				timer = setTimeout("clear()", 3000);
+				return;
+			}
+			
+			document.getElementById("response").innerHTML = PerformXslTransform();
+			/*
+			xml=loadXMLDoc("execache.xml");
+			xsl=loadXMLDoc("execache.xsl");
+			// code for IE
+			if (window.ActiveXObject)
+			{
+				ex=xml.transformNode(xsl);
+				document.getElementById("response").innerHTML=ex;
+			}
+			// code for Mozilla, Firefox, Opera, etc.
+			else if (document.implementation && document.implementation.createDocument)
+			{
+				xsltProcessor=new XSLTProcessor();
+				xsltProcessor.importStylesheet(xsl);
+				xsltProcessor.addParameter("maintype", type);
+				xsltProcessor.addParameter("mainnumber", num);
+				xsltProcessor.addParameter("start", start);
+				resultDocument = xsltProcessor.transformToFragment(xml,document.listForm);
+				document.getElementById("response").appendChild(resultDocument);
+			}
+			*/
+			document.listForm.className = 'shown';
+			document.selector.className = 'hidden';
+			engageLinks();
+		}
+		
+		function clear()
+		{
+			document.getElementById("status").innerHTML = "";
+			document.getElementById("response").innerHTML = "";
+			clearTimeout(timer);
+		}
+		
+		function next()
+		{
+			start = limit;
+			limit = limit + num;
+			engageLinks();
+			nexting = true;
+			displayResult();
+		}
+		
+		function previous()
+		{
+			start = start - num;
+			limit = limit - num;
+			engageLinks();
+			displayResult();
+		}
+		
+		function engageLinks()
+		{
+			var sizeElement = document.getElementById("size");
+			if(sizeElement != null)
+			{
+				size = parseFloat(sizeElement.innerHTML);
+			}
+			else
+			{
+				size = 0;
+			}
+			if(start <= 1)
+			{
+				document.getElementById("prevLink").className = 'hidden';
+			}
+			else
+				document.getElementById("prevLink").className = 'shown';
+				
+			if(limit >= size + 1 || size == 0)
+			{
+				document.getElementById("nextLink").className = 'hidden';
+			}
+			else
+				document.getElementById("nextLink").className = 'shown';
+		}
+		
+		function back()
+		{
+			document.listForm.className = 'hidden';
+			document.selector.className = 'shown';
+			document.getElementById("status").innerHTML = "";
+			start = 1;
+			nexting = false;
+			limit = start + num;
+		}
+	</script>
+	<body>
+		<form name="selector" class="shown">
+			<span id="request" >
+				<table align="center" name="requesttable">
+					<tr>
+						<td>Type to Select: </td>
+						<td><input class="normal" onFocus="this.className='normal'" type="text" name="typebox" value=""/></td>
+					</tr>
+					<tr>
+						<td>Display </td>
+						<td><input class="normal" onFocus="this.className='normal'" type="text" name="numdisp" value=""/> items on each page.</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<p align="center"><button id="submit" name="submit" onClick="displayResult()">Display</button></p>
+						</td>
+						<td>
+							<button id="closeButton" onClick="javascript:window.close()">Close</button>
+						</td>
+					</tr>
+					<tr >
+						<td colspan=2>
+							<p align="center"><span id="status"></span></p>
+						</td>
+					</tr>
+				</table>
+			</span>
+		</form>
+		<form name="listForm" class="hidden">
+			<div align="center">
+				<span id="response"></span>
+			</div>
+			<div class="nav" align="center">
+				<span id="navigation">
+				<table width="100%">
+					<tr>
+						<td align="left" width="33%"><a id="prevLink" onClick="previous()">Previous</a></td>
+						<td align="center" width="34%"><a id="mainLink" onClick="back()">Main Screen</a></td>
+						<td align="right" width="33%"><a id="nextLink" onClick="next()">Next</a></td>
+					</tr>
+				</table>
+				</span>
+			</div>
+		</form>
+	</body>
+</html>

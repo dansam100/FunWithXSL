@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="display_table.xsl"?>
+<data>
+  <currency>
+    <ccy name="USD"/>
+    <ccy name="CAD"/>
+    <ccy name="EUR"/>
+  </currency>
+	<account name="Burlington">
+		<currency name="CAD" value="111"/>
+		<currency name="USD" value="222"/>
+		<currency name="EUR" value="333"/>
+	</account>
+	<account name="Shellington">
+		<currency name="CAD" value="444"/>
+		<currency name="USD" value="555"/>
+		<currency name="EUR" value="666"/>
+	</account>
+	<account name="Darlington">
+		<currency name="CAD" value="777"/>
+		<currency name="USD" value="888"/>
+		<currency name="EUR" value="999"/>
+	</account>
+	<account name="Damlington">
+		<currency name="CAD" value="123"/>
+		<currency name="USD" value="456"/>
+		<currency name="EUR" value="789"/>
+	</account>
+</data>
